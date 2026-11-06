@@ -616,7 +616,7 @@ if recomendar:
 
         try:
             with st.spinner("Procurando filmes semelhantes..."):
-                resultado     = get_recomendacao(filme_selecionado)
+                resultado     = get_recomendacao(filme_selecionado, quantidade)
                 recomendacoes = preparar_recomendacoes(resultado)
 
             if recomendacoes.empty:
